@@ -1,110 +1,81 @@
-📚 Atividade Prática – Banco de Dados Relacional
+📚 Projetos Práticos de Banco de Dados Relacional
 
-Curso de Back-End – SENAI
+Este repositório documenta as atividades práticas de modelagem e implementação de bancos de dados relacionais, desenvolvidas como parte do curso de Back-End no SENAI. O foco principal está na aplicação de conceitos teóricos em cenários de negócio reais, utilizando o MySQL.
 
-Este repositório reúne as atividades práticas propostas em sala de aula, com foco em Banco de Dados Relacional, envolvendo duas aplicações:
-
-🏦 SysBank – Sistema de Gestão Bancária
-
-🚚 LogiTrack – Sistema de Rastreamento Logístico
-
-Ambos os projetos têm como objetivo modelar, implementar e popular bancos de dados relacionais, utilizando conceitos de modelagem, DER, criação de tabelas em MySQL e inserção de dados fictícios.
+Os três projetos principais são: FoodNet (um marketplace de alimentos), SysBank (um sistema de gestão bancária) e LogiTrack (um sistema de rastreamento logístico).
 
 📌 Objetivos da Atividade
+Cada projeto visa solidificar as seguintes habilidades:
 
-Identificar entidades, atributos, chaves primárias e estrangeiras.
+Modelagem: Identificar entidades, atributos, chaves primárias e estrangeiras.
+Relacionamentos: Definir e representar as cardinalidades (1:1, 1:N, N:N).
+Diagrama ER: Criar o Diagrama Entidade-Relacionamento (DER).
+Implementação: Escrever scripts SQL para a criação e configuração das tabelas no MySQL.
+População de Dados: Inserir dados fictícios para simular e testar as operações do sistema.
 
-Definir relacionamentos e cardinalidades.
+🍔 Projeto 1: FoodNet — Sistema de Marketplace
+O FoodNet simula a base de dados de um marketplace de alimentos que conecta clientes, restaurantes e entregadores. O sistema gerencia toda a operação, desde o cardápio dos restaurantes até o fluxo de pedidos, avaliações e promoções.
 
-Criar o DER (Diagrama Entidade-Relacionamento).
+Entidades-Chave:
 
-Implementar a modelagem em MySQL.
+Clientes 🍽️: Usuários da plataforma.
+Restaurantes 🧑‍🍳: Estabelecimentos parceiros.
+Produtos 🍕: Itens disponíveis para pedido.
+Pedidos 📝: Registro completo dos pedidos dos clientes.
+Itens do Pedido 🛒: Detalhes dos produtos em cada pedido.
+Entregadores 🏍️: Profissionais responsáveis pela entrega.
+Avaliações ⭐: Feedback de clientes sobre restaurantes e entregadores.
+Cupons 💰: Gerenciamento de descontos e promoções.
 
-Popular o banco com dados fictícios que simulem situações reais.
+🏦 Projeto 2: SysBank — Sistema de Gestão Bancária
+O SysBank simula o back-end de um banco digital, gerenciando de forma integrada as informações dos clientes e suas atividades financeiras, como transações diárias, cartões, empréstimos e investimentos.
 
-🏦 Projeto 1 – SysBank (Sistema Bancário)
+Entidades-Chave:
 
-O SysBank é um sistema para gerenciar clientes, contas, transações e produtos financeiros de um banco digital.
+Agências 🏢: Informações das agências físicas ou digitais.
+Funcionários 🧑‍💼: Dados dos colaboradores e suas responsabilidades.
+Clientes 👨‍👩‍👧‍👦: Cadastro central de todos os correntistas.
+Contas 💳: Representação das contas bancárias, com saldo e status.
+Cartões 💳: Dados de cartões de débito e crédito associados às contas.
+Faturas 🧾: Consolidação de despesas de cartões de crédito.
+Transações 🔄: Registro detalhado de todas as movimentações financeiras.
+Empréstimos 🤝: Gerenciamento dos contratos de crédito.
+Investimentos 📈: Permite aos clientes aplicarem seu dinheiro em produtos financeiros.
 
-Escopo
+🚚 Projeto 3: LogiTrack — Sistema de Rastreamento Logístico
+O LogiTrack é um sistema para uma empresa de transportes, projetado para gerenciar e rastrear envios, controlando a coleta, a entrega, a frota de veículos e os motoristas.
 
-Agências – Cadastro das agências físicas ou digitais.
+Entidades-Chave:
 
-Funcionários – Dados dos colaboradores e vínculo com agência.
+Clientes 📦: Podem ser remetentes e/ou destinatários.
+Motoristas 👨‍✈️: Dados dos condutores responsáveis pelas entregas.
+Veículos 🚛: Informações da frota, como placa e capacidade de carga.
+Envios 🗺️: Registro completo das remessas, de ponta a ponta.
+Pacotes 🎁: Detalhes dos itens transportados em cada envio.
+Rotas de Entrega 📍: Agrupamento de envios, atribuídos a motoristas e veículos.
+Rastreamento 🔍: Histórico de atualizações de status de cada envio.
 
-Clientes – Cadastro central dos clientes do banco.
+✨ Resultados Alcançados
+Com a conclusão dos projetos, foi possível:
 
-Contas – Contas bancárias vinculadas a clientes e agências.
+FoodNet: Criar um sistema funcional capaz de registrar clientes, restaurantes, produtos e, principalmente, gerenciar o fluxo de pedidos, entregas e avaliações.
+SysBank: Construir uma base de dados robusta para simular as principais operações de um banco digital, como a criação de contas, o registro de transações, empréstimos e investimentos.
+LogiTrack: Desenvolver uma solução para o gerenciamento de uma transportadora, permitindo o controle de motoristas e veículos, além do rastreamento em tempo real de pacotes e envios.
 
-Cartões – Débito e crédito associados a contas.
+Esses projetos demonstram a aplicação prática de conceitos de banco de dados relacionais em cenários distintos, reforçando a importância da modelagem e da integridade de dados para o desenvolvimento de sistemas robustos e eficientes.
 
-Faturas – Controle de gastos de cartões de crédito.
+🧠 O que aprendi
+FoodNet: Você aprendeu a modelar um sistema de marketplace com lógica de negócio complexa, entendendo o fluxo de dados entre clientes, restaurantes e entregadores, além de gerenciar pedidos, avaliações e cupons.
 
-Transações – Registro de depósitos, saques, transferências e pagamentos.
+SysBank: Você mergulhou na criação de um sistema financeiro, que exige alta confiabilidade. O projeto ensinou a modelar relacionamentos complexos, como um cliente que pode ter várias contas, e a criar tabelas para rastrear transações e gerenciar contratos.
 
-Beneficiários – Agenda de favorecidos para transferências recorrentes.
+LogiTrack: Neste projeto, você desenvolveu a capacidade de modelar um sistema de logística, aprendendo como representar rotas de entrega, a relação entre motoristas e veículos, e a importância de uma tabela de rastreamento para registrar atualizações de status em tempo real.
 
-Empréstimos – Contratos de crédito solicitados pelos clientes.
+🛠️ Tecnologias Utilizadas
+MySQL: Sistema de Gerenciamento de Banco de Dados.
+SQL: Linguagem de Definição e Manipulação de Dados.
+MySQL Workbench / Draw.io: Ferramentas para modelagem e criação de diagramas ER.
 
-Parcelas – Detalhamento dos pagamentos de empréstimos.
 
-Investimentos – Aplicações financeiras (CDB, ações, etc).
-
-🚚 Projeto 2 – LogiTrack (Sistema de Rastreamento Logístico)
-
-O LogiTrack é um sistema para gerenciar entregas, rastrear pacotes e controlar motoristas e veículos de uma transportadora.
-
-Escopo
-
-Clientes – Remetentes e destinatários.
-
-Motoristas – Condutores responsáveis pelas entregas.
-
-Veículos – Frota utilizada nas rotas de entrega.
-
-Envios – Registro de remessas com coleta, destino e status.
-
-Pacotes – Itens transportados em cada envio.
-
-Rotas de Entrega – Agrupamento de envios atribuídos a motoristas e veículos.
-
-Rastreamento – Histórico de atualizações de cada envio.
-
-📐 Etapas Realizadas
-
-✅ Modelagem: Definição das entidades, atributos e relacionamentos.
-✅ DER: Criação dos diagramas Entidade-Relacionamento.
-✅ Implementação: Scripts SQL para criação das tabelas no MySQL.
-✅ Inserção de dados fictícios: Clientes, contas, envios, pacotes e movimentações.
-
-🚀 Tecnologias Utilizadas
-
-MySQL – Sistema de gerenciamento de banco de dados.
-
-SQL – Linguagem de definição e manipulação de dados.
-
-MySQL Workbench / Draw.io – Ferramentas para modelagem e DER.
-
-📂 Estrutura do Repositório
-
-/sysbank → Documentação e scripts do sistema bancário.
-
-/logitrack → Documentação e scripts do sistema logístico.
-
-/modelagem → Diagramas DER.
-
-/scripts → Scripts SQL (DDL e DML).
-
-/exemplos → Consultas SQL para simulação de operações.
-
-✨ Resultados Esperados
-
-Com os projetos, será possível:
-
-SysBank: cadastrar clientes, contas, transações, cartões, empréstimos e investimentos.
-
-LogiTrack: gerenciar entregas, motoristas, veículos, pacotes e rastreamento de status.
-
-Ambos os sistemas reforçam a aplicação prática de conceitos de bancos de dados relacionais em cenários distintos (bancário e logístico).
 
 🔹 Atividade desenvolvida como parte do curso de Back-End (SENAI).
