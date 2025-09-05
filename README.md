@@ -65,11 +65,11 @@ LogiTrack: Desenvolver uma solução para o gerenciamento de uma transportadora,
 Esses projetos demonstram a aplicação prática de conceitos de banco de dados relacionais em cenários distintos, reforçando a importância da modelagem e da integridade de dados para o desenvolvimento de sistemas robustos e eficientes.
 
 🧠 O que aprendi
-FoodNet: Você aprendeu a modelar um sistema de marketplace com lógica de negócio complexa, entendendo o fluxo de dados entre clientes, restaurantes e entregadores, além de gerenciar pedidos, avaliações e cupons.
+FoodNet: Aprendi a modelar um sistema de marketplace com lógica de negócio complexa, entendendo o fluxo de dados entre clientes, restaurantes e entregadores, além de gerenciar pedidos, avaliações e cupons.
 
-SysBank: Você mergulhou na criação de um sistema financeiro, que exige alta confiabilidade. O projeto ensinou a modelar relacionamentos complexos, como um cliente que pode ter várias contas, e a criar tabelas para rastrear transações e gerenciar contratos.
+SysBank: Mergulhei na criação de um sistema financeiro, que exige alta confiabilidade. O projeto ensinou a modelar relacionamentos complexos, como um cliente que pode ter várias contas, e a criar tabelas para rastrear transações e gerenciar contratos.
 
-LogiTrack: Neste projeto, você desenvolveu a capacidade de modelar um sistema de logística, aprendendo como representar rotas de entrega, a relação entre motoristas e veículos, e a importância de uma tabela de rastreamento para registrar atualizações de status em tempo real.
+LogiTrack: Neste projeto, desenvolvi a capacidade de modelar um sistema de logística, aprendendo como representar rotas de entrega, a relação entre motoristas e veículos, e a importância de uma tabela de rastreamento para registrar atualizações de status em tempo real.
 
 🛠️ Tecnologias Utilizadas
 MySQL: Sistema de Gerenciamento de Banco de Dados.
