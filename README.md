@@ -1,80 +1,86 @@
-📚 Projetos Práticos de Banco de Dados Relacional
+# 📚 Projetos Práticos de Banco de Dados Relacional
 
-Este repositório documenta as atividades práticas de modelagem e implementação de bancos de dados relacionais, desenvolvidas como parte do curso de Back-End no SENAI. O foco principal está na aplicação de conceitos teóricos em cenários de negócio reais, utilizando o MySQL.
+Este repositório reúne as atividades práticas de **modelagem e implementação de bancos de dados relacionais**, desenvolvidas no curso de **Back-End (SENAI)**.  
+O foco está na **aplicação de conceitos teóricos em cenários de negócio reais**, utilizando **MySQL**.
 
-Os três projetos principais são: FoodNet (um marketplace de alimentos), SysBank (um sistema de gestão bancária) e LogiTrack (um sistema de rastreamento logístico).
+---
 
-📌 Objetivos da Atividade
-Cada projeto visa solidificar as seguintes habilidades:
+## 📌 Objetivos da Atividade
+Cada projeto tem como objetivo consolidar as seguintes habilidades:
 
-Modelagem: Identificar entidades, atributos, chaves primárias e estrangeiras.
-Relacionamentos: Definir e representar as cardinalidades (1:1, 1:N, N:N).
-Diagrama ER: Criar o Diagrama Entidade-Relacionamento (DER).
-Implementação: Escrever scripts SQL para a criação e configuração das tabelas no MySQL.
-População de Dados: Inserir dados fictícios para simular e testar as operações do sistema.
+- **Modelagem**: Identificação de entidades, atributos, chaves primárias e estrangeiras.  
+- **Relacionamentos**: Definição e representação das cardinalidades (1:1, 1:N, N:N).  
+- **Diagrama ER (DER)**: Criação de diagramas Entidade-Relacionamento.  
+- **Implementação**: Criação e configuração de tabelas no MySQL via scripts SQL.  
+- **População de Dados**: Inserção de dados fictícios para simular e validar operações.
 
-🍔 Projeto 1: FoodNet — Sistema de Marketplace
-O FoodNet simula a base de dados de um marketplace de alimentos que conecta clientes, restaurantes e entregadores. O sistema gerencia toda a operação, desde o cardápio dos restaurantes até o fluxo de pedidos, avaliações e promoções.
+---
 
-Entidades-Chave:
+## 🍔 Projeto 1: **FoodNet — Marketplace de Alimentos**
+O **FoodNet** simula a base de dados de um marketplace que conecta **clientes, restaurantes e entregadores**, gerenciando pedidos, cardápios, avaliações e promoções.  
 
-Clientes 🍽️: Usuários da plataforma.
-Restaurantes 🧑‍🍳: Estabelecimentos parceiros.
-Produtos 🍕: Itens disponíveis para pedido.
-Pedidos 📝: Registro completo dos pedidos dos clientes.
-Itens do Pedido 🛒: Detalhes dos produtos em cada pedido.
-Entregadores 🏍️: Profissionais responsáveis pela entrega.
-Avaliações ⭐: Feedback de clientes sobre restaurantes e entregadores.
-Cupons 💰: Gerenciamento de descontos e promoções.
+**Entidades-Chave**  
+- Clientes 🍽️  
+- Restaurantes 🧑‍🍳  
+- Produtos 🍕  
+- Pedidos 📝  
+- Itens do Pedido 🛒  
+- Entregadores 🏍️  
+- Avaliações ⭐  
+- Cupons 💰  
 
-🏦 Projeto 2: SysBank — Sistema de Gestão Bancária
-O SysBank simula o back-end de um banco digital, gerenciando de forma integrada as informações dos clientes e suas atividades financeiras, como transações diárias, cartões, empréstimos e investimentos.
+---
 
-Entidades-Chave:
+## 🏦 Projeto 2: **SysBank — Sistema de Gestão Bancária**
+O **SysBank** simula o back-end de um banco digital, controlando contas, transações, empréstimos, cartões e investimentos.  
 
-Agências 🏢: Informações das agências físicas ou digitais.
-Funcionários 🧑‍💼: Dados dos colaboradores e suas responsabilidades.
-Clientes 👨‍👩‍👧‍👦: Cadastro central de todos os correntistas.
-Contas 💳: Representação das contas bancárias, com saldo e status.
-Cartões 💳: Dados de cartões de débito e crédito associados às contas.
-Faturas 🧾: Consolidação de despesas de cartões de crédito.
-Transações 🔄: Registro detalhado de todas as movimentações financeiras.
-Empréstimos 🤝: Gerenciamento dos contratos de crédito.
-Investimentos 📈: Permite aos clientes aplicarem seu dinheiro em produtos financeiros.
+**Entidades-Chave**  
+- Agências 🏢  
+- Funcionários 🧑‍💼  
+- Clientes 👨‍👩‍👧‍👦  
+- Contas 💳  
+- Cartões 💳  
+- Faturas 🧾  
+- Transações 🔄  
+- Empréstimos 🤝  
+- Investimentos 📈  
 
-🚚 Projeto 3: LogiTrack — Sistema de Rastreamento Logístico
-O LogiTrack é um sistema para uma empresa de transportes, projetado para gerenciar e rastrear envios, controlando a coleta, a entrega, a frota de veículos e os motoristas.
+---
 
-Entidades-Chave:
+## 🚚 Projeto 3: **LogiTrack — Sistema de Rastreamento Logístico**
+O **LogiTrack** é um sistema para transportadoras, permitindo gerenciar **coleta, entrega, motoristas, veículos e rastreamento em tempo real**.  
 
-Clientes 📦: Podem ser remetentes e/ou destinatários.
-Motoristas 👨‍✈️: Dados dos condutores responsáveis pelas entregas.
-Veículos 🚛: Informações da frota, como placa e capacidade de carga.
-Envios 🗺️: Registro completo das remessas, de ponta a ponta.
-Pacotes 🎁: Detalhes dos itens transportados em cada envio.
-Rotas de Entrega 📍: Agrupamento de envios, atribuídos a motoristas e veículos.
-Rastreamento 🔍: Histórico de atualizações de status de cada envio.
+**Entidades-Chave**  
+- Clientes 📦  
+- Motoristas 👨‍✈️  
+- Veículos 🚛  
+- Envios 🗺️  
+- Pacotes 🎁  
+- Rotas de Entrega 📍  
+- Rastreamento 🔍  
 
-✨ Resultados Alcançados
-Com a conclusão dos projetos, foi possível:
+---
 
-FoodNet: Criar um sistema funcional capaz de registrar clientes, restaurantes, produtos e, principalmente, gerenciar o fluxo de pedidos, entregas e avaliações.
-SysBank: Construir uma base de dados robusta para simular as principais operações de um banco digital, como a criação de contas, o registro de transações, empréstimos e investimentos.
-LogiTrack: Desenvolver uma solução para o gerenciamento de uma transportadora, permitindo o controle de motoristas e veículos, além do rastreamento em tempo real de pacotes e envios.
+## ✨ Resultados Alcançados
+- **FoodNet** → Sistema capaz de registrar clientes, restaurantes, produtos e gerenciar pedidos, entregas e avaliações.  
+- **SysBank** → Base robusta para operações bancárias: contas, transações, empréstimos e investimentos.  
+- **LogiTrack** → Solução para transportadoras, com gestão de motoristas, veículos e rastreamento de pacotes em tempo real.  
 
-Esses projetos demonstram a aplicação prática de conceitos de banco de dados relacionais em cenários distintos, reforçando a importância da modelagem e da integridade de dados para o desenvolvimento de sistemas robustos e eficientes.
+---
 
-🧠 O que aprendi
-FoodNet: Aprendi a modelar um sistema de marketplace com lógica de negócio complexa, entendendo o fluxo de dados entre clientes, restaurantes e entregadores, além de gerenciar pedidos, avaliações e cupons.
+## 🧠 O que Aprendi
+- **FoodNet** → Modelagem de marketplace, fluxo de dados entre clientes, restaurantes e entregadores, gestão de pedidos e cupons.  
+- **SysBank** → Relacionamentos complexos, confiabilidade em sistemas financeiros, rastreamento de transações e contratos.  
+- **LogiTrack** → Representação de rotas de entrega, vínculo entre motoristas/veículos e uso de tabelas de rastreamento em tempo real.  
 
-SysBank: Mergulhei na criação de um sistema financeiro, que exige alta confiabilidade. O projeto ensinou a modelar relacionamentos complexos, como um cliente que pode ter várias contas, e a criar tabelas para rastrear transações e gerenciar contratos.
+---
 
-LogiTrack: Neste projeto, desenvolvi a capacidade de modelar um sistema de logística, aprendendo como representar rotas de entrega, a relação entre motoristas e veículos, e a importância de uma tabela de rastreamento para registrar atualizações de status em tempo real.
+## 🛠️ Tecnologias Utilizadas
+- **MySQL** → Sistema de Gerenciamento de Banco de Dados.  
+- **SQL** → Linguagem de Definição e Manipulação de Dados.  
+- **MySQL Workbench / Draw.io** → Ferramentas de modelagem e criação de DER.  
 
-🛠️ Tecnologias Utilizadas
-MySQL: Sistema de Gerenciamento de Banco de Dados.
-SQL: Linguagem de Definição e Manipulação de Dados.
-MySQL Workbench / Draw.io: Ferramentas para modelagem e criação de diagramas ER.
+
 
 
 
